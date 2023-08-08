@@ -134,6 +134,11 @@ SP 【スマホ用レイアウト設定】
     flex-direction: column;
   }
   #Avatar img {
+    
+  width:  calc(200px - 1px)
+  height: calc(200px - 1px)
+  border-radius: calc(40% - 1%)
+  margin-right: 30px;
     margin-right: 0;
   }
 
@@ -141,10 +146,13 @@ SP 【スマホ用レイアウト設定】
   Clothes
   -------------------------------------------*/
   #Clothes ul {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
   }
   #Clothes li {
-    width: 100%;
+    width: calc(40% - 1%); /* 2列ごとに表示するための幅調整 */
     margin-bottom: 30px;
   }
 }
