@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -301,5 +303,27 @@
   </footer>
 
 </body>
+<script>
+  const sections = document.querySelectorAll("section.wrapper");
+  let visibleSections = [];
+
+  function checkVisibility() {
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.7 && rect.bottom >= 0) {
+        if (!visibleSections.includes(section)) {
+          section.classList.add("visible");
+          visibleSections.push(section);
+        }
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  window.addEventListener("resize", checkVisibility);
+
+  // 初期表示時にも要素の表示をチェック
+  window.addEventListener("DOMContentLoaded", checkVisibility);
+</script>
 
 </html>
