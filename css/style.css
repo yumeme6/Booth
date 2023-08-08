@@ -65,7 +65,7 @@ li {
 }
 
 /*-------------------------------------------
-Mainvisual
+Mainvisual【Top画像】
 -------------------------------------------*/
 #mainvisual {
   margin-bottom: 80px;
@@ -78,38 +78,36 @@ Mainvisual
 }
 
 /*-------------------------------------------
-About
+Avatar【Avatar説明欄】
 -------------------------------------------*/
-#about .content {
+#Avatar .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-
 }
-#about img {
+#Avatar img {
   width:  200px;
   height: 200px;
   border-radius: 50%;
   margin-right: 30px;
 }
-#about .text {
+#Avatar .text {
   text-align: left;
 }
 
 /*-------------------------------------------
-Bicycle
+Clothes【衣装説明欄】
 -------------------------------------------*/
-#bicycle ul {
+#Clothes ul {
   display: flex;
   justify-content: space-between;
 }
-#bicycle li {
+#Clothes li {
   width: 32%;
   margin:0px 10px 30px 10px;
 }
 /*-------------------------------------------
-footer
+footer 【copyright】
 -------------------------------------------*/
 #footer {
   font-size: 0.5rem;
@@ -118,7 +116,7 @@ footer
 }
 
 /*-------------------------------------------
-SP
+SP 【スマホ用レイアウト設定】
 -------------------------------------------*/
 @media screen and (max-width: 600px) {
 
@@ -130,22 +128,22 @@ SP
   }
 
   /*-------------------------------------------
-  About
+  Avatar
   -------------------------------------------*/
-  #about .content {
+  #Avatar .content {
     flex-direction: column;
   }
-  #about img {
+  #Avatar img {
     margin-right: 0;
   }
 
   /*-------------------------------------------
-  Bicycle
+  Clothes
   -------------------------------------------*/
-  #bicycle ul {
+  #Clothes ul {
     flex-direction: column;
   }
-  #bicycle li {
+  #Clothes li {
     width: 100%;
     margin-bottom: 30px;
   }
