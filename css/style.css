@@ -3,27 +3,34 @@
 html {
   font-size: 100%;
 }
+
 body {
   color: #383e45;
   font-size: 1.1rem;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
 }
+
 li {
   list-style: none;
 }
+
 .site-title {
   width: 120px;
   line-height: 1px;
   padding: 10px 0;
 }
+
 .site-title a {
   display: block;
 }
+
 .section-title {
   display: inline-block;
   font-size: 2.2rem;
@@ -31,16 +38,19 @@ li {
   margin-bottom: 60px;
   border-bottom: solid 1px #383e45;
 }
+
 .content-title {
   font-size: 1.3rem;
   margin: 10px 0;
 }
+
 .wrapper {
   max-width: 1300px;
   margin: 0 auto 100px auto;
   /*padding: 0 4%;*/
   text-align: center;
 }
+
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
@@ -50,16 +60,20 @@ li {
   align-items: center;
   margin: 0 auto;
 }
+
 #header ul {
   display: flex;
   padding: 10px 0;
 }
+
 #header li {
   margin-left: 30px;
 }
+
 #header li a {
   color: #24292e;
 }
+
 #header li a:hover {
   opacity: 0.7;
 }
@@ -70,11 +84,83 @@ Mainvisual【Top画像】
 #mainvisual {
   margin-bottom: 80px;
 }
+
 #mainvisual img {
   width: 100%;
   max-width: 1920px;
   height: 600px;
   object-fit: cover;
+}
+
+#AnimeVisual {
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+  .text {
+    fill: none;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 6s infinite linear;
+    animation: stroke 6s infinite linear;
+    letter-spacing: 0.12em;
+  }
+
+  .text:nth-child(5n + 1) {
+    stroke: #F2385A;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+  }
+
+  .text:nth-child(5n + 2) {
+    stroke: #F5A503;
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+  }
+
+  .text:nth-child(5n + 3) {
+    stroke: #E9F1DF;
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+  }
+
+  .text:nth-child(5n + 4) {
+    stroke: #56D9CD;
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+  }
+
+  .text:nth-child(5n + 5) {
+    stroke: #3AA1BF;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+  }
+
+
+  background: #111;
+  background-size: .2em 100%;
+  font: 5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+
+  svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
 }
 
 /*-------------------------------------------
@@ -85,12 +171,14 @@ Avatar【Avatar説明欄】
   justify-content: center;
   align-items: center;
 }
+
 #Avatar img {
-  width:  200px;
+  width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-right: 30px;
 }
+
 #Avatar .text {
   text-align: left;
 }
@@ -102,10 +190,12 @@ Clothes【衣装説明欄】
   display: flex;
   justify-content: space-between;
 }
+
 #Clothes li {
   width: 32%;
-  margin:0px 10px 30px 10px;
+  margin: 0px 10px 30px 10px;
 }
+
 /*-------------------------------------------
 footer 【copyright】
 -------------------------------------------*/
@@ -133,12 +223,10 @@ SP 【スマホ用レイアウト設定】
   #Avatar .content {
     flex-direction: column;
   }
+
   #Avatar img {
-    
-  width:  calc(200px - 1px)
-  height: calc(200px - 1px)
-  border-radius: calc(40% - 1%)
-  margin-right: 30px;
+
+    width: calc(200px - 1px) height: calc(200px - 1px) border-radius: calc(40% - 1%) margin-right: 30px;
     margin-right: 0;
   }
 
@@ -151,8 +239,10 @@ SP 【スマホ用レイアウト設定】
     flex-wrap: wrap;
 
   }
+
   #Clothes li {
-    width: calc(40% - 1%); /* 2列ごとに表示するための幅調整 */
+    width: calc(40% - 1%);
+    /* 2列ごとに表示するための幅調整 */
     margin-bottom: 30px;
   }
 }
