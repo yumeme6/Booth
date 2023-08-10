@@ -6,6 +6,7 @@ html {
 
 body {
   color: #383e45;
+  background: #111;
   font-size: 1.1rem;
 }
 
@@ -53,7 +54,6 @@ li {
 
 /*-------------------------------------------
 ヘッダー
--------------------------------------------*/
 #header {
   display: flex;
   justify-content: space-between;
@@ -77,10 +77,10 @@ li {
 #header li a:hover {
   opacity: 0.7;
 }
+-------------------------------------------*/
 
 /*-------------------------------------------
 Mainvisual【Top画像】
--------------------------------------------*/
 #mainvisual {
   margin-bottom: 80px;
 }
@@ -91,7 +91,11 @@ Mainvisual【Top画像】
   height: 600px;
   object-fit: cover;
 }
+-------------------------------------------*/
 
+/*-------------------------------------------
+AnimeVisual【Topアニメーション】
+-------------------------------------------*/
 #AnimeVisual {
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 
